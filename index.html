@@ -13,19 +13,28 @@
   <link rel="stylesheet" href="css/styles.css" />
 
   <script data-main="js/main" src="js/libs/require/require.js"></script>
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'vuj8yaw',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
 </head>
 <body>
   <!-- Initially populated by templates/layout.html -->
   <div class="container container_16">
-    <div class=".tk-restore">Testing 123 ALL CAPS</div>
   </div>
   <div id="container"></div>
 
   
   <!-- Typekit -->
+  <!--
   <script type="text/javascript" src="//use.typekit.net/vuj8yaw.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+  -->
   <!-- Website tracking tool GetClicky.com -->
   <script src="//static.getclicky.com/js"></script>
   <script>try{ clicky.init(66544553); }catch(e){}</script>
