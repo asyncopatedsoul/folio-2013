@@ -8,6 +8,7 @@ require.config({
     lodash: 'libs/lodash/lodash', // alternative to underscore
     backbone: 'libs/backbone/backbone-min', // https://github.com/amdjs
     sinon: 'libs/sinon/sinon.js',
+    //kinetic: 'libs/kinetic/kinetic-vcurrent',
 
     // Require.js plugins
     text: 'libs/require/text',
@@ -25,6 +26,7 @@ require([
   'views/app',
   'router',
   'vm'
+  //'kinetic'
 ], function(AppView, Router, Vm){
   var appView = Vm.create({}, 'AppView', AppView);
   appView.render();
